@@ -1,7 +1,7 @@
 alert('Hi! Are you ready to drive?');
 
 //Prompts user to input age
-let age = prompt('What\'s your current age?');
+let age = Number(prompt('What\'s your current age?'));
 
 //If user's age is below 18, car powers off.
 if (age < 18) {
@@ -15,7 +15,7 @@ else if (age === 18) {
     document.write('Enjoy your first year of driving. <br>Please don\'t compete with anyone on the road, this is not a video game.');
 }
 
-//If user's age above 18, car powers on.
+//If user's age is above 18, car powers on.
 else if (age > 18) {
     alert('Powering on! Fasten your seat belt and enjoy your ride.');
     document.write('Wearing a seatbelt is extremely important.');
